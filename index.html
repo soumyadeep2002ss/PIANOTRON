@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>PIANOTRON</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="piano.png">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<!-- <audio id="my_audio" src="welcome1.mp3" autoplay></audio> -->
+<div class="loader">
+  <div class="loader-inner">
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+  </div>
+</div>
+
+<body id="stop-scrolling">
+  <h1 id="title">PIANOTRON🎹</h1>
+  <div
+    style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;"
+    unselectable="on" onselectstart="return false;" onmousedown="return false;" class="piano">
+    <ul class="set">
+      <li class="white C4" id="c">c</li>
+      <li class="black C#" id="C">C</li>
+      <li class="white D4" id="d">d</li>
+      <li class="black D#" id="D">D</li>
+      <li class="white E4" id="e">e</li>
+      <li class="black E#" id="E">E</li>
+      <li class="white F4" id="f">f</li>
+      <li class="black F#" id="F">F</li>
+      <li class="white G4" id="g">g</li>
+      <li class="black G#" id="G">G</li>
+      <li class="white A4" id="a">a</li>
+      <li class="black A#" id="A">A</li>
+      <li class="white B4" id="b">b</li>
+      <li class="black B#" id="B">B</li>
+      <li class="white C5" id="s">s</li>
+      <li class="black C#5" id="S">S</li>
+      <li class="white BLANK" id=".">.</li>
+    </ul>
+  </div>
+
+
+  <div>
+    <div class="wrapper1">
+      <div class="inputField">
+        <input type="text" placeholder="Enter your piano note for autoPlay">
+        <button id="start"><i class="fa fa-play" aria-hidden="true"></i></button>
+        <button id="stop"><i class="fa fa-stop" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+  </style>
+
+  <footer>
+    <p>© 2021 Soumyadeep Pal</p>
+    <script src="index.js" charset="utf-8"></script>
+  </footer>
+
+  <div class="social">
+    <ul>
+      <li>
+        <a href="https://www.facebook.com/pranab.pal.31586">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <span> - Facebook</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/soumyadeep-pal-b3421b189/">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <span> - LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/soumyadeep2002ss">
+          <i class="fa fa-github" aria-hidden="true"></i>
+          <span> - GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/iamsoumyadeep24/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <span> - Instagram</span>
+        </a>
+      </li>
+  </div>
+</body>
+
+</html>
