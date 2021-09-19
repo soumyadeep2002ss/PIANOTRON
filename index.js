@@ -97,10 +97,11 @@ document.addEventListener("keydown", (e) => {
     var btnclick = document.getElementById(e.key);
     btnclick.classList.add("active");
     makeSound(e.key);
-    setTimeout(function () {
-      btnclick.classList.remove("active");
-    }, 100);
   }
+});
+document.addEventListener("keyup", (e) => {
+  var btnclick = document.getElementById(e.key);
+  btnclick.classList.remove("active");
 });
 
 function makeSound(key) {
