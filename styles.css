@@ -106,8 +106,12 @@ footer {
 }
 
 .piano {
+<<<<<<< HEAD
   margin-left: auto;
   margin-right: auto;
+=======
+  margin: 0 auto;
+>>>>>>> 67fe5338728a7ce4efadfea62236e221cb8c6ff6
 }
 
 .piano ul {

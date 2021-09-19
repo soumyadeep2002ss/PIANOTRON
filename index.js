@@ -119,6 +119,10 @@ document.addEventListener("keydown", (e) => {
     makeSound(e.key);
   }
 });
+document.addEventListener("keyup", (e) => {
+  var btnclick = document.getElementById(e.key);
+  btnclick.classList.remove("active");
+});
 
 document.addEventListener("keyup", (e) => {
   var btnclick = document.getElementById(e.key);
