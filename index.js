@@ -14,8 +14,6 @@
 
 // sare ga ma pa sharp
 // var notes ="c# d# e# f# g# a# b# s# s# b# a# g# f# e# d# c#";
-
-
 const inputBox = document.querySelector(".inputField input");
 const addBtn = document.querySelector(".inputField button");
 var notes;
@@ -91,16 +89,40 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
   });
 }
 
+var allowed = true;
+$(document).keypress(function (event) {
+  if (event.repeat != undefined) {
+    allowed = !event.repeat;
+  }
+  if (!allowed) return;
+  allowed = false;
+  if (event.keyCode == 32) return;
+  $("h2").css("visibility", "visible");
+  $("h2").text(event.key);
+});
+$(document).keyup(function (e) {
+  allowed = true;
+});
+$(document).focus(function (e) {
+  allowed = true;
+});
+
+$(document).keyup(function (event) {
+  $("h2").css("visibility", "hidden");
+});
+
 document.addEventListener("keydown", (e) => {
   if (r == false) {
     if (e.repeat) return;
     var btnclick = document.getElementById(e.key);
     btnclick.classList.add("active");
     makeSound(e.key);
-    setTimeout(function () {
-      btnclick.classList.remove("active");
-    }, 100);
   }
+});
+
+document.addEventListener("keyup", (e) => {
+  var btnclick = document.getElementById(e.key);
+  btnclick.classList.remove("active");
 });
 
 function makeSound(key) {

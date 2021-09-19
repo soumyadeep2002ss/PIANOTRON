@@ -5,14 +5,15 @@
 body {
   text-align: center;
   margin: 0;
-  background: #3b364e; 
-  zoom: 0.62;
+  background: #3b364e;
+  zoom: 0.6;
+  justify-content: center;
 }
 
 h1 {
   font-size: 3rem;
   color: #e2dbf3;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   text-shadow: 0.4rem 0 rgb(100, 96, 122);
   display: flex;
   justify-content: center;
@@ -20,17 +21,22 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
-  color: #0b80a7;
-  font-family: "Arvo", cursive;
-  text-shadow: 2px 0 #4610db;
+  font-size: 3.1rem;
+  color: #cfe607;
+  /* font-family: "Orbitron", sans-serif; */
+  font-family: 'Manrope', sans-serif;
+  /* text-shadow: 2px 0 #4610db; */
+  visibility: hidden;
 }
+
 .wrapper1 {
   max-width: 100rem;
   width: 100%;
-  margin: 50px auto;
+  margin: 0 auto;
+  justify-content: center;
   border-radius: 5px;
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .inputField input {
@@ -94,10 +100,14 @@ h2 {
   pointer-events: auto;
 }
 footer {
-  padding-top: 2rem;
   color: #dbedf3;
   font-size: 1.5rem;
   font-family: sans-serif;
+}
+
+.piano {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .piano ul {
@@ -167,7 +177,7 @@ ul .white.active {
   box-shadow: -2.5px -2.5px 5px rgba(255, 255, 255, 0.2) inset,
     0 -12.5px 5px 7.5px rgba(0, 0, 0, 0.6) inset, 0 5px 10px rgba(0, 0, 0, 0.5);
   background: linear-gradient(45deg, #222 0%, #555 100%);
-  color:wheat;
+  color: wheat;
 }
 
 .black:active {
@@ -201,135 +211,134 @@ ul li:last-child {
   border-radius: 0 12.5px 12.5px 12.5px;
 }
 
-.social{
-  font-family: 'Roboto Condensed', sans-serif;
-  padding-bottom: 10rem;
+.social {
+  font-family: "Roboto Condensed", sans-serif;
+  padding-bottom: 2rem;
   zoom: 0.6;
 }
 
 .social ul {
-  position:relative;
-  display:flex;
+  position: relative;
+  display: flex;
   justify-content: center;
   text-align: center;
-  padding:0;
+  padding: 0;
 }
 
 .social ul li {
   padding-top: 13rem;
-  list-style:none;
-  margin:0 1rem;
+  list-style: none;
+  margin: 0 1rem;
 }
 
 ul li a .fa {
   font-size: 5rem;
   color: #000000;
-  line-height:10rem;
-  transition: .5s;
+  line-height: 10rem;
+  transition: 0.5s;
   padding-right: 1.5rem;
 }
 
 ul li a span {
-  padding:0;
-  margin:0;
-  position:absolute;
+  padding: 0;
+  margin: 0;
+  position: absolute;
   top: 4rem;
   color: #000000;
   letter-spacing: 0.6rem;
-  transition: .5s;
+  transition: 0.5s;
   font-size: 2.2rem;
 }
 
 ul li a {
   text-decoration: none;
-  display:absolute;
-  display:block;
+  display: absolute;
+  display: block;
   width: 25rem;
   height: 9rem;
   background: #6e698a;
-  text-align:left;
+  text-align: left;
   padding-left: 2rem;
-  transform: rotate(-30deg) skew(25deg) translate(0,0);
-  transition:.5s;
-  box-shadow: -2rem 2rem 2rem rgba(0,0,0,.4);
+  transform: rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: 0.5s;
+  box-shadow: -2rem 2rem 2rem rgba(0, 0, 0, 0.4);
 }
 
 ul li a:before {
-  content: '';
+  content: "";
   position: absolute;
-  top:1rem;
-  left:-2rem;
-  height:100%;
-  width:2.1rem;
+  top: 1rem;
+  left: -2rem;
+  height: 100%;
+  width: 2.1rem;
   background: rgb(61, 57, 73);
-  transform: .5s;
+  transform: 0.5s;
   transform: rotate(0deg) skewY(-45deg);
 }
 
 ul li a:after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom:-2rem;
-  left:-1rem;
-  height:2rem;
-  width:100%;
+  bottom: -2rem;
+  left: -1rem;
+  height: 2rem;
+  width: 100%;
   background: rgb(61, 57, 73);
-  transform: .5s;
+  transform: 0.5s;
   transform: rotate(0deg) skewX(-45deg);
 }
 
 ul li a:hover {
-  transform: rotate(-30deg) skew(25deg) translate(4.8rem,-3.6rem);
-  box-shadow: -10rem 10rem 10rem rgba(0,0,0,.5);
+  transform: rotate(-30deg) skew(25deg) translate(4.8rem, -3.6rem);
+  box-shadow: -10rem 10rem 10rem rgba(0, 0, 0, 0.5);
 }
 ul li:hover .fa {
-  color:#fff;
+  color: #fff;
 }
 
 ul li:hover span {
-  color:#fff;
+  color: #fff;
 }
 
-ul li:hover:nth-child(1) a{
+ul li:hover:nth-child(1) a {
   background: #3b5998;
 }
-ul li:hover:nth-child(1) a:before{
+ul li:hover:nth-child(1) a:before {
   background: #365492;
 }
-ul li:hover:nth-child(1) a:after{
+ul li:hover:nth-child(1) a:after {
   background: #4a69ad;
 }
 
-ul li:hover:nth-child(2) a{
+ul li:hover:nth-child(2) a {
   background: #00aced;
 }
-ul li:hover:nth-child(2) a:before{
+ul li:hover:nth-child(2) a:before {
   background: #097aa5;
 }
-ul li:hover:nth-child(2) a:after{
+ul li:hover:nth-child(2) a:after {
   background: #53b9e0;
 }
 
-ul li:hover:nth-child(3) a{
+ul li:hover:nth-child(3) a {
   background: #6e6867;
 }
-ul li:hover:nth-child(3) a:before{
+ul li:hover:nth-child(3) a:before {
   background: #5e58578e;
 }
-ul li:hover:nth-child(3) a:after{
+ul li:hover:nth-child(3) a:after {
   background: #867f7ecc;
 }
 
-ul li:hover:nth-child(4) a{
+ul li:hover:nth-child(4) a {
   background: #e4405f;
 }
-ul li:hover:nth-child(4) a:before{
+ul li:hover:nth-child(4) a:before {
   background: #d81c3f;
 }
-ul li:hover:nth-child(4) a:after{
+ul li:hover:nth-child(4) a:after {
   background: #e46880;
 }
-
 
 @media (max-width: 998px) {
   html {
