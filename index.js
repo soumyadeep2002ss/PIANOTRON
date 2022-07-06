@@ -8,7 +8,8 @@
 
 //sare jaha se achha
 // var notes ="g gf# ef# d# ee ed#c#b bc#e f#g# ag# ag#f#e g gf# ef# d# ee ed#c#b";
-
+//Happy Birthday
+// var notes ="aa bad c#"
 // sare ga ma pa
 // var notes ="c d e f g a b s s b a g f e d c";
 
